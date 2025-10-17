@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
-app.use('/suppliers/', require('./lib/routes/supplersRoutes')); 
+app.use('/suppliers/', require('./lib/routes/suppliersRoutes')); 
 app.use('/product/', require('./lib/routes/productRoutes'));
 app.use('/auth/', require('./lib/routes/authRoutes'));
 
