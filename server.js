@@ -9,6 +9,9 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 
 
+app.use('/systemSettings/', require('./lib/routes/systemSettingsRoutes'));
+app.use('/reorderLevels/', require('./lib/routes/reorderLevelsRoutes'));
+app.use('/productBatches/', require('./lib/routes/productBatchesRoutes'));
 app.use('/units/', require('./lib/routes/uintsRoutes'));
 app.use('/stockTransfers/', require('./lib/routes/stockTransferRoutes'));
 app.use('/srockLevels/', require('./lib/routes/stockLevelRoutes'));
