@@ -8,6 +8,8 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
+app.use('/customers/', require('./lib/routes/customersRoutes'));
+app.use('/categories/', require('./lib/routes/categoriesRoutes'));
 app.use('/stockTransactions/', require('./lib/routes/stockTransactionRoutes'));
 app.use('/warehouses/', require('./lib/routes/warehousesRoutes'));
 app.use('/suppliers/', require('./lib/routes/suppliersRoutes')); 
