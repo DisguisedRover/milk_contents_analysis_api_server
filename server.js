@@ -22,6 +22,7 @@ app.use('/categories/', require('./lib/routes/categoriesRoutes'));
 app.use('/stockTransactions/', require('./lib/routes/stockTransactionRoutes'));
 app.use('/warehouses/', require('./lib/routes/warehousesRoutes'));
 app.use('/suppliers/', require('./lib/routes/suppliersRoutes')); 
+app.use('/product/', require('./lib/routes/productDetailRoutes'));
 app.use('/product/', require('./lib/routes/productRoutes'));
 app.use('/auth/', require('./lib/routes/authRoutes'));
 
